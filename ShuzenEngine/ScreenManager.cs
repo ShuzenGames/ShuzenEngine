@@ -9,6 +9,7 @@ namespace ShuzenEngine
         public ContentManager Content { get; private set; }
         public GameScreen currendScreen { get; private set; }
         public GameScreen[] gameScreens { get; private set; }
+        public Vector2 ScreenDimension { get; private set; }
         public static ScreenManager Instance
         {
             get
