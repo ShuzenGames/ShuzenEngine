@@ -7,6 +7,7 @@ namespace ShuzenEngine
     public abstract class GameScreen
     {
         protected ContentManager screenContent;
+        protected bool isOverlapping; //für menüs etc.
 
         public abstract void LoadContent(ContentManager content);
 

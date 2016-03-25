@@ -10,11 +10,11 @@ namespace ShuzenEngine
 {
     abstract class UI_Base
     {
-        protected Vector2 Position { get; private set; }
+        protected Vector2 Position { get; set; }
         protected bool IsVisible { get; set; }
         protected bool IsEnabled { get; set; }
-
-        public abstract void Initialise();
+        protected int Width { get; set; }
+        protected int Hight { get; set; }
 
         public abstract void Unload();
 

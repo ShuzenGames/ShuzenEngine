@@ -23,7 +23,14 @@ namespace ShuzenEngine
 
         private ScreenManager()
         {
+            ScreenDimension = new Vector2(800, 600); //standart bildschirmauflösung
+        }
 
+        public void ChangeScreen(int index)
+        {
+            currendScreen.UnloadContent();
+            currendScreen = null;
+            currendScreen = gameScreens[index];
         }
 
         public void Init(GameScreen[] gameScreens)
