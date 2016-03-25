@@ -41,12 +41,14 @@ namespace ShuzenEngine
 
         public void LoadContent(ContentManager content)
         {
-            Content = content;
+            Content = new ContentManager(content.ServiceProvider, content.RootDirectory);
+            currendScreen.LoadContent(Content);
         }
 
         public void UnloadContent()
         {
             Content.Dispose();
+            currendScreen.UnloadContent();
         }
 
         public void Update(GameTime gt)
