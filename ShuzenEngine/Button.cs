@@ -31,7 +31,9 @@ namespace ShuzenEngine
 
         public override void Unload()
         {
-            throw new NotImplementedException();
+            Font = null;
+            Text = null;
+            Texture = null;
         }
 
         public override void Update(GameTime gt)
