@@ -50,6 +50,7 @@
     <Compile Include="ScreenManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SplashScreen.cs" />
+    <Compile Include="SpriteMap.cs" />
     <Compile Include="StandardPropertys.cs" />
     <Compile Include="UI_Base.cs" />
   </ItemGroup>
