@@ -30,7 +30,7 @@ namespace ShuzenEngine
 
         public override void Update(GameTime gt)
         {
-
+            base.Update(gt);
         }
     }
 }
